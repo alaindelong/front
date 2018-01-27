@@ -1,0 +1,42 @@
+<h1>Authors</h1>
+<p>
+  this is the {{title}} component!
+</p>
+<div>
+  <ul>
+    <li *ngFor="let author of authors">{{author.id}} {{author.name}} {{author.title}}</li>
+  </ul>
+</div>
+<button (click)="show(in.value)">show</button>
+<input type="text" #in>
+<div>
+  <p [ngClass]="{classOne:cone, classTwo:ctwo}">{{ message }}</p>
+</div>
+<div class="container">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <div class="form-group">
+      <label>name</label>
+      <input type="text" required class="form-control" name="name" [ngModel]="name">
+    </div>
+    <div class="form-group">
+        <label>adresse</label>
+        <input type="text" required class="form-control" name="adresse" ngModel>
+    </div>
+    <div>
+      <button [disabled]="!userForm.form.valid" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+<div>
+  <h2 id="error">{{errorMessage}}</h2>
+</div>
+<div>
+  <h2>I am the parent component</h2>
+  <input type="text" #ip (keyup)="0">
+  <br>
+ <!-- <button (click)="show2(ip.value)">show</button>-->
+</div>
+<div>
+  <p> data from child {{childData}}</p>
+  <app-course [parentData]="ip.value" (childEvent)="childData=$event"></app-course>
+</div>

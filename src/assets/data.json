@@ -1,0 +1,5 @@
+[
+    {"id":1, "name":"alain", "title":"consultant"},
+    {"id":2, "name":"briand", "title":"ingénieur"},
+    {"id":3, "name":"other", "title":"prof-ingé"}
+]

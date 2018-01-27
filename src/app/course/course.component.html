@@ -1,0 +1,14 @@
+<h1>Courses</h1>
+<p>
+  this is the {{title}} component!
+</p>
+<div>
+  <ul>
+    <li *ngFor=" let course of courses">{{course}}</li>
+  </ul>
+</div>
+<div>
+  <h2>I am the child component</h2>
+  <input type="text" #ci (keyup)="onChange(ci.value)">
+  <p> data coming from parent {{parentData}}</p>
+</div>
