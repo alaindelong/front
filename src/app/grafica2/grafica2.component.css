@@ -1,0 +1,26 @@
+.span{
+    font-size: 15px;
+}
+.spacer{
+    text-align: center;
+}
+#select{
+    font-size: 15px;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+.radio-inline{
+    width: 80px;
+    height: 80px;
+}
+.radio1{
+    width: 15px;
+    height: 15px;
+}
+.fo{
+    text-align: center;
+    background-color: #4B4BAF;
+    color: white;
+}

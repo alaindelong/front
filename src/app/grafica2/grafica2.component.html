@@ -1,0 +1,164 @@
+<!--<form>
+  <div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading" id="spacer">Checkout</div>
+      <div class="panel-body">
+        <fieldset>
+          <legend>Personnal Information</legend>
+          <div class="input-group">
+            <input class="form-control" id="fname" type="text" placeholder="First Name" name="fname" />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input class="form-control col-md-offset-0" id="lname" type="text" placeholder="Last Name" name="lname" />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          </div> <br/>
+          <div class="input-group">
+            <input class="form-control" id="phone" type="tel" placeholder="Phone Number" name="phone" />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+            <input class="form-control col-md-offset-0" id="email" type="text" placeholder="Email" name="email" />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+          </div>
+        </fieldset>
+        <fieldset class="pay">
+          <legend>Payment Method <span class="span">Select any one</span></legend>
+        </fieldset>
+        <fieldset>
+          <legend>Payment Information</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Billing Address</legend>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</form>-->
+<form>
+  <div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading spacer">Checkout</div>
+      <div class="panel-body">
+        <div class="form-group">
+          <legend>Personnal Information</legend>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="input-group">
+                <input class="form-control" type="text" name="fname" placeholder="First Name" id="fname" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="input-group">
+                <input class="form-control" type="text" name="lname" placeholder="Last Name" id="lname" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              </div>
+            </div>
+          </div> <br/>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="input-group">
+                <input class="form-control" type="text" name="phone" placeholder="Phone Number" id="phone" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="input-group">
+                <input class="form-control" type="text" name="email" placeholder="Email" id="email" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <legend>Payment Method<span id="select"> Select any one</span></legend>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="input-group">
+                <input class="form-control radio1" type="radio" name="card" />
+                <span class="radio-inline"><img class="img-responsive" src="../../assets/mc.png"/></span>
+                <span class="radio-inline"><img class="img-responsive" src="../../assets/v.png"/></span>
+                <span class="radio-inline"><img class="img-responsive" src="../../assets/a.png"/></span>
+                <span class="radio-inline"><img class="img-responsive" src="../../assets/d.png"/></span>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="input-group">
+                <input class="form-control radio1" type="radio" name="card" />
+                <span class="radio-inline"><img class="img-responsive" src="../../assets/p.png"/></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <legend>Payment Information</legend>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="input-group">
+                <input class="form-control" type="text" name="ccard" placeholder="Valid Card Number" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+              </div>
+            </div>
+          </div> <br/>
+          <div class="row">
+            <div class="col-xs-4">
+              <select class="form-control" name="month">
+                <option value="" selected>Month</option>
+                <option value="Janvier">Janvier</option>
+                <option value="Fevrier">Février</option>
+              </select>
+            </div>
+            <div class="col-xs-4">
+              <select class="form-control" name="year">
+                  <option value="" selected>Year</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                </select>
+            </div>
+            <div class="col-xs-4">
+              <input class="form-control" type="text" name="cvc" placeholder="CVC" />
+            </div>
+          </div> <br/>
+          <div class="row">
+            <div class="col-xs-12">
+              <input class="form-control" type="text" name="fullname" placeholder="Full Name On Card" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <legend>Billing Address</legend>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="input-group">
+                <input class="form-control" type="text" name="address" placeholder="Street Address" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              </div>
+            </div>
+          </div> <br/>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="input-group">
+                <input class="form-control" type="text" name="address" placeholder="Street Address Line 2" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              </div>
+            </div>
+          </div> <br/>
+          <div class="row">
+            <div class="col-xs-6">
+              <input class="form-control" type="text" name="country" placeholder="Country" />
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control" type="text" name="state" placeholder="State" />
+            </div>
+          </div> <br/>
+          <div class="row">
+            <div class="col-xs-6">
+              <input class="form-control" type="text" name="city" placeholder="City" />
+            </div>
+            <div class="col-xs-6">
+              <input class="form-control" type="text" name="zipcode" placeholder="Postal/Zip Code" />
+            </div>
+          </div> <br/>
+              <div class="panel-footer fo">Done</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

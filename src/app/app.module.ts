@@ -5,29 +5,22 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MoviesComponent } from './movies/movies.component';
-import { ProductComponent } from './product/product.component';
+import { Grafica1Component } from './grafica1/grafica1.component';
+import { Grafica2Component } from './grafica2/grafica2.component';
+
 
 
 @NgModule({
   declarations: [
      AppComponent,
-     MoviesComponent,
-     ProductComponent
+     Grafica1Component,
+     Grafica2Component,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      {
-        path: 'movies',
-        component: MoviesComponent
-      },
-      {
-        path: 'product',
-        component: ProductComponent
-      }
     ])
   ],
   providers: [],
